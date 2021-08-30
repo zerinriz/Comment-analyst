@@ -3,7 +3,7 @@ import { Comment } from "semantic-ui-react";
 
 function Comments({ auth, time, text, likes, image, index }) {
   return (
-    <Comment style={{ maxWidth: 1500 }}>
+    <Comment key={index} style={{ maxWidth: 1500 }}>
       <Comment.Avatar src={image} />
       <Comment.Content>
         <Comment.Author>{auth}</Comment.Author>
